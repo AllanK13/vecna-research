@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vecna's Truth Map - Scrying the Shattered Realms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Map Container -->
+    <div id="map-container">
+        <!-- Zoom Controls -->
+        <div id="zoom-controls">
+            <button id="zoom-in" title="Zoom In">+</button>
+            <button id="zoom-out" title="Zoom Out">−</button>
+            <button id="zoom-reset" title="Reset Zoom">⟲</button>
+        </div>
+        
+        <!-- Map Wrapper for zoom/pan -->
+        <div id="map-wrapper">
+            <div id="map-container-inner">
+                <img id="map-image" src="Images/sword coast map.webp" alt="Sword Coast Map">
+                <!-- Region Orb Hotspots (positioned via CSS/JS) -->
+                <div class="orb locked" data-region="icewind-dale" title="Icewind Dale / Ten-Towns">
+                    <img src="Images/orb.png" alt="Scrying Orb">
+                </div>
+                <div class="orb locked" data-region="baldurs-gate" title="Baldur's Gate">
+                    <img src="Images/orb.png" alt="Scrying Orb">
+                </div>
+                <div class="orb locked" data-region="anauroch" title="The East / Anauroch">
+                    <img src="Images/orb.png" alt="Scrying Orb">
+                </div>
+                <div class="orb locked" data-region="waterdeep" title="Waterdeep">
+                    <img src="Images/orb.png" alt="Scrying Orb">
+                </div>
+                <div class="orb locked" data-region="phandalin" title="Phandalin">
+                    <img src="Images/orb.png" alt="Scrying Orb">
+                </div>
+                <div class="orb locked" data-region="daggerford" title="Daggerford">
+                    <img src="Images/orb.png" alt="Scrying Orb">
+                </div>
+                <div class="orb locked" data-region="underdark" title="The Underdark">
+                    <img src="Images/orb.png" alt="Scrying Orb">
+                </div>
+            </div>
+        </div> <!-- end map-wrapper -->
+    </div>
+
+    <!-- Scrying Modal -->
+    <div id="scrying-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-button" id="close-modal">&times;</button>
+            
+            <!-- Scrying Puzzle View -->
+            <div id="scrying-puzzle" class="modal-view">
+                <h2 id="region-title">Scrying the Unknown</h2>
+                
+                <!-- Orb Composite Image -->
+                <div class="orb-composite">
+                    <img id="region-image" class="region-image" src="" alt="Region Vision">
+                    <img src="Images/orb.png" class="orb-overlay" alt="Scrying Orb">
+                </div>
+                
+                <!-- Scrying Controls -->
+                <div class="scrying-controls">
+                    <div class="slider-group">
+                        <label for="opacity-slider">
+                            Opacity: <span id="opacity-value">50</span>%
+                        </label>
+                        <input type="range" id="opacity-slider" min="0" max="100" value="50">
+                    </div>
+                    
+                    <div class="slider-group">
+                        <label for="blur-slider">
+                            Blur: <span id="blur-value">10</span>px
+                        </label>
+                        <input type="range" id="blur-slider" min="0" max="20" value="10">
+                    </div>
+                    
+                    <div class="slider-group">
+                        <label for="brightness-slider">
+                            Brightness: <span id="brightness-value">100</span>%
+                        </label>
+                        <input type="range" id="brightness-slider" min="50" max="150" value="100">
+                    </div>
+                    
+                    <div class="slider-group">
+                        <label for="contrast-slider">
+                            Contrast: <span id="contrast-value">100</span>%
+                        </label>
+                        <input type="range" id="contrast-slider" min="50" max="150" value="100">
+                    </div>
+                </div>
+                
+                <button id="complete-scrying" class="action-button">Complete Scrying</button>
+            </div>
+            
+            <!-- Surface Truth View -->
+            <div id="surface-truth" class="modal-view hidden">
+                <h2 id="truth-title">Surface Truth Revealed</h2>
+                <div class="orb-composite">
+                    <img id="truth-image" class="region-image" src="" alt="Revealed Vision">
+                </div>
+                <div class="truth-content">
+                    <p id="truth-text"></p>
+                </div>
+                <button id="research-further" class="action-button">Research Further</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Puzzle Modal -->
+    <div id="hidden-puzzle-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-button" id="close-hidden-puzzle">&times;</button>
+            
+            <div id="hidden-puzzle-container">
+                <h2 id="hidden-puzzle-title">Hidden Truth</h2>
+                <div id="hidden-puzzle-content">
+                    <!-- Puzzle content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Puzzle Modal -->
+    <div class="modal hidden" id="final-puzzle-modal">
+        <div class="modal-content final-puzzle-content">
+            <button class="close-button" id="close-final-puzzle">&times;</button>
+            
+            <div id="final-puzzle-container">
+                <h2>Assemble the Truth</h2>
+                <p class="final-puzzle-instructions">Arrange the symbols in the correct order to reveal the ultimate truth.</p>
+                
+                <div id="symbols-pool">
+                    <!-- Symbols will be randomly placed here -->
+                </div>
+                
+                <div id="drop-zones">
+                    <!-- 7 blank spaces for symbols -->
+                    <div class="drop-zone" data-position="0"></div>
+                    <div class="drop-zone" data-position="1"></div>
+                    <div class="drop-zone" data-position="2"></div>
+                    <div class="drop-zone" data-position="3"></div>
+                    <div class="drop-zone" data-position="4"></div>
+                    <div class="drop-zone" data-position="5"></div>
+                    <div class="drop-zone" data-position="6"></div>
+                </div>
+                
+                <button id="check-solution" class="check-solution-btn">Check Solution</button>
+                
+                <div id="final-truth-reveal" style="display: none;">
+                    <h2>The Ultimate Truth</h2>
+                    <div id="final-truth-content">
+                        <!-- Final truth will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Assemble the Truth Button -->
+    <button id="assemble-truth-btn" style="display: none;">Assemble the Truth</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
