@@ -7,10 +7,10 @@ const REGIONS = {
         name: 'Ten-Towns',
         position: { top: '7.09%', left: '35.57%' },
         imagePath: 'Images/regions/icewind-dale.png',
-        surfaceTruth: 'Auril the Frostmaiden has cursed the Northern lands with perpetual winter, known as the Everlasting Rime. With no heroes to stop her, she has used the winter chill destroyed Ten-Towns. She looks further south and moves to conquer Neverwinter.',
+        surfaceTruth: 'Auril the Frostmaiden has cursed the Northern lands with perpetual winter, known as the Everlasting Rime. With no heroes to stop her, she has used the winter chill to destroy Ten-Towns. She looks further south and moves to conquer Neverwinter.',
         placeholderColor: '#4A90E2', // Icy blue
         scryingTarget: { opacity: 78, blur: 5, brightness: 92, contrast: 135 },
-        hiddenTruth: 'Far north, hidden within a glacier, lies an ancient and forgotten city. An item of immense power once lied buried within the depths, until Vecna made a deal with Auril. In exchange for the artifact, she would rule over the Icewind Dale and more.',
+        hiddenTruth: 'Far north, hidden within a glacier, lies an ancient and forgotten city. An item of immense power once lied buried within the depths, until Vecna made a deal with Auril. In exchange for the artifact, she would rule over Icewind Dale and more.',
         decoderFragment: 'O',
         triviaQuestions: [
             {
@@ -37,7 +37,7 @@ const REGIONS = {
         surfaceTruth: "Worshippers of Tiamat have worked for years in Baldur's Gate, amassing treasure and the five Dragon Masks. Having succeeded, they summoned the goddess to rule over the city. Baldur's Gate now lives in fear and servitude to the Dragon Queen.",
         placeholderColor: '#E74C3C', // Dragon red
         scryingTarget: { opacity: 25, blur: 14, brightness: 118, contrast: 68 },
-        hiddenTruth: "Avernus held a powerful artifact Vecna was determined to acquire. He made a deal with Tiamat, promising her dominion over Baldur's Gate in exchange for this powerful relic.",
+        hiddenTruth: "Avernus held a powerful artifact that Vecna was determined to acquire. He made a deal with Tiamat, promising her dominion over Baldur's Gate in exchange for this powerful relic.",
         decoderFragment: 'K',
         triviaQuestions: [
             {
@@ -64,7 +64,7 @@ const REGIONS = {
         surfaceTruth: 'Iymrith the Desert Doom, the ancient blue dragon, wreaks havoc across the Anauroch Desert. Having orchestrated a conflict between the Giants and small folk by breaking the Ordning, no one could stand in his way.',
         placeholderColor: '#F39C12', // Desert gold
         scryingTarget: { opacity: 92, blur: 2, brightness: 140, contrast: 95 },
-        hiddenTruth: 'Beneath the endless sands of Anauroch lay the ruins of ancient Netheril, where a powerful artifact remained hidden for millennia. Vecna struck a deal with Iymrith, granting her dominion over the desert in exchange for this relic of the fallen empire.',
+        hiddenTruth: 'The small village of Nightstone was built around an ancient artifact. To keep himself hidden, Vecna made a deal with Iymrith to break the Ordning, causing the giants to war with themselves, and in the chaos, take the artifact unseen. In exchange, Vecna promised Iymrith dominion over the desert.',
         decoderFragment: 'S',
         triviaQuestions: [
             {
@@ -118,7 +118,7 @@ const REGIONS = {
         surfaceTruth: 'Mind flayers have slowly corrupted the town of Phandalin. With everyone dead or driven to madness, the mind flayers have summoned their allies and renamed the town to Absolution.',
         placeholderColor: '#9B59B6', // Psychic purple
         scryingTarget: { opacity: 62, blur: 9, brightness: 62, contrast: 82 },
-        hiddenTruth: 'Hidden within the town or Phandalin and its surrounding area lay fragments of an ancient power. Mind flayers worked in secret to assemble this artifact, attracting the attention of Vecna. Making a deal with the mind flayers, he promised them continue rule over Phandalin in exchange for the assembled relic.',
+        hiddenTruth: 'Hidden within the buildings of Phandalin and its surrounding area laid fragments of an ancient power. Mind flayers worked in secret to assemble this artifact, attracting the attention of Vecna. Making a deal with the mind flayers, he promised them continued rule over Phandalin in exchange for the assembled relic.',
         decoderFragment: 'L',
         triviaQuestions: [
             {
@@ -145,7 +145,7 @@ const REGIONS = {
         surfaceTruth: "Szass Tam and the Red Wizards have invaded the Sword Coast. Despite a solid effort to hold them back, including a defected red wizard, Szass Tam prevailed using his secret base to continue sending reinforcements from across the realms. The red wizards have renamed Daggerford to New Thay, plotting their continued expansion across the Sword Coast.",
         placeholderColor: '#C0392B', // Thayan crimson
         scryingTarget: { opacity: 12, blur: 0, brightness: 128, contrast: 142 },
-        hiddenTruth: "",
+        hiddenTruth: "Deep in the jungles of Chult lay the Tomb of the Nine Gods. Guarding the entrance was a powerful artifact Vecna desired. Conveniently, the red wizards of Thay, led by Szass Tam, were searching for the Soulmonger, another powerful artifact held in the Tomb. Vecna helped them obtain their artifact in exchange for his, giving the red wizards the power they needed to invade the Sword Coast.",
         decoderFragment: 'B',
         triviaQuestions: [
             {
@@ -169,10 +169,10 @@ const REGIONS = {
         name: 'The Underdark',
         position: { top: '35.61%', left: '8.21%' },
         imagePath: 'Images/regions/underdark.png',
-        surfaceTruth: 'The Underdark, already a chaotic realm, has been plunged into deeper darkness. Demon lords have come through rifts with no adventurers strong enough to push them back. Demogorgon, Zuggtmoy, and Juiblex now divide the Underdark between them.',
+        surfaceTruth: 'The Underdark, already a chaotic realm, has been plunged into deeper darkness. Rifts have torn open, unleashing several Demon Lords, and no adventurers strong enough to push them back. Demogorgon, Zuggtmoy, and Juiblex now divide the Underdark between them.',
         placeholderColor: '#2C3E50', // Deep shadow
         scryingTarget: { opacity: 88, blur: 11, brightness: 105, contrast: 58 },
-        hiddenTruth: 'Deep within the Underdark, beneath the duergar city of Gracklstugh, derro reassembled an artifact of primordial darkness from before the Sundering. Vecna bargained with the demon lords, offering them free reign over the Underdark in exchange for retrieving this relic of the Abyss.',
+        hiddenTruth: 'Deep within the Underdark, beneath the duergar city of Gracklstugh, derro reassembled an artifact of primordial darkness from before the Sundering. Vecna bargained with the Demon Lords, offering them free reign over the Underdark in exchange for retrieving this relic of the Abyss.',
         decoderFragment: 'E',
         triviaQuestions: [
             {
@@ -204,10 +204,10 @@ const REGIONS = {
 
 // Tolerance values for each slider type
 const TOLERANCE = {
-    opacity: 5,
-    blur: 2,
-    brightness: 8,
-    contrast: 8
+    opacity: 1,
+    blur: 0,
+    brightness: 2,
+    contrast: 2
 };
 
 // ===========================================
@@ -455,13 +455,13 @@ class ScryingPuzzle {
         this.brightnessValue.textContent = brightness;
         this.contrastValue.textContent = contrast;
         
-        // Apply CSS filters to region image
-        this.regionImage.style.filter = `
-            opacity(${opacity}%)
-            blur(${blur}px)
-            brightness(${brightness}%)
-            contrast(${contrast}%)
-        `;
+        // Don't actually apply filters - sliders are just for checking values
+        // this.regionImage.style.filter = `
+        //     opacity(${opacity}%)
+        //     blur(${blur}px)
+        //     brightness(${brightness}%)
+        //     contrast(${contrast}%)
+        // `;
         
         // Calculate how close we are to target (0-100 scale)
         const region = REGIONS[this.currentRegion];
@@ -473,27 +473,35 @@ class ScryingPuzzle {
         const contrastDelta = Math.abs(parseInt(contrast) - targets.contrast);
         
         // Normalize errors by their respective tolerances (how many tolerances away)
-        const opacityError = opacityDelta / TOLERANCE.opacity;
-        const blurError = blurDelta / TOLERANCE.blur;
-        const brightnessError = brightnessDelta / TOLERANCE.brightness;
-        const contrastError = contrastDelta / TOLERANCE.contrast;
+        // Handle zero tolerance specially - must be exact match
+        const opacityError = TOLERANCE.opacity === 0 ? (opacityDelta === 0 ? 0 : Infinity) : opacityDelta / TOLERANCE.opacity;
+        const blurError = TOLERANCE.blur === 0 ? (blurDelta === 0 ? 0 : Infinity) : blurDelta / TOLERANCE.blur;
+        const brightnessError = TOLERANCE.brightness === 0 ? (brightnessDelta === 0 ? 0 : Infinity) : brightnessDelta / TOLERANCE.brightness;
+        const contrastError = TOLERANCE.contrast === 0 ? (contrastDelta === 0 ? 0 : Infinity) : contrastDelta / TOLERANCE.contrast;
         
-        // Average normalized error (0 = perfect, 1 = at tolerance boundary, >1 = beyond tolerance)
-        const totalError = (opacityError + blurError + brightnessError + contrastError) / 4;
+        // Count how many sliders are within tolerance
+        let slidersWithinTolerance = 0;
+        if (opacityError <= 1.0) slidersWithinTolerance++;
+        if (blurError <= 1.0) slidersWithinTolerance++;
+        if (brightnessError <= 1.0) slidersWithinTolerance++;
+        if (contrastError <= 1.0) slidersWithinTolerance++;
         
-        // Visual feedback on image border - green when close, red when far
-        if (totalError <= 1.0) {
-            // Within tolerance - green glow
-            this.regionImage.style.boxShadow = '0 0 30px rgba(46, 204, 113, 0.8)';
-        } else if (totalError <= 2.0) {
-            // Getting close - yellow glow
-            this.regionImage.style.boxShadow = '0 0 30px rgba(241, 196, 15, 0.6)';
-        } else if (totalError <= 4.0) {
-            // Still far - orange glow
-            this.regionImage.style.boxShadow = '0 0 30px rgba(230, 126, 34, 0.5)';
+        // Visual feedback - yellow glow based on how many sliders are correct
+        if (slidersWithinTolerance === 0) {
+            // No sliders correct - no glow
+            this.regionImage.style.boxShadow = 'none';
+        } else if (slidersWithinTolerance === 1) {
+            // 1 slider correct - dim yellow glow
+            this.regionImage.style.boxShadow = '0 0 20px rgba(241, 196, 15, 0.3)';
+        } else if (slidersWithinTolerance === 2) {
+            // 2 sliders correct - medium yellow glow
+            this.regionImage.style.boxShadow = '0 0 25px rgba(241, 196, 15, 0.6)';
+        } else if (slidersWithinTolerance === 3) {
+            // 3 sliders correct - bright yellow glow
+            this.regionImage.style.boxShadow = '0 0 30px rgba(241, 196, 15, 0.8)';
         } else {
-            // Very far - red glow
-            this.regionImage.style.boxShadow = '0 0 30px rgba(231, 76, 60, 0.4)';
+            // All 4 sliders correct - very bright yellow glow
+            this.regionImage.style.boxShadow = '0 0 35px rgba(241, 196, 15, 1.0)';
         }
     }
 
@@ -1081,7 +1089,7 @@ class FinalPuzzle {
         this.finalTruthContent.innerHTML = `
             <p>The symbols align, revealing their ancient message: <strong>OBELISK</strong></p>
             <p style="margin-top: 20px;">Vecna learned of the great power the Netherese once wielded, rivaling even that of the Weavers. He learned that remnants of that power still existed, fragments of an ancient obelisk, scattered across the Sword Coast. This obelisk, if reassembled, held the key to rewriting reality itself.</p>
-            <p style="margin-top: 15px;">Through cunning bargains with dark entities—Tiamat, Szass Tam, demon lords, and more—Vecna gathered each fragment. In exchange for dominion over regions of the Sword Coast, these powers unknowingly aided in his ultimate goal.</p>
+            <p style="margin-top: 15px;">Through cunning bargains with dark entities—Tiamat, Szass Tam, Demon Lords, and more—Vecna gathered each fragment. In exchange for dominion over regions of the Sword Coast, these powers unknowingly aided in his ultimate goal.</p>
             <p style="margin-top: 15px;">After assembling the fragments, he used its power to wipe all knowledge of the Netherese, the Weavers, and himself from everyone.</p>
             <p style="margin-top: 15px;">With no one left to stop him, or even know of him and his power, he began the arduous ritual to rewrite all of reality, remake time, and reforge all of existence in his image.</p>
             <p style="margin-top: 20px; color: #ff0000ff; font-weight: bold;">No one else remembers the truth. No one else can stand against him. You are the last chance for all of existence—and time is running out.</p>
@@ -1186,14 +1194,4 @@ document.addEventListener('DOMContentLoaded', () => {
         updateFinalPuzzleButton();
     };
     
-    // Keyboard shortcuts
-    document.addEventListener('keydown', (e) => {
-        // Press 'R' key to reset all progress
-        if (e.key === 'r' || e.key === 'R') {
-            if (confirm('Reset all progress?')) {
-                gameState.reset();
-                updateFinalPuzzleButton();
-            }
-        }
-    });
 });
