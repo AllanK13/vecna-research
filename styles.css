@@ -145,10 +145,10 @@ body {
     opacity: 1;
 }
 
-/* Hidden truth completed - dark purple highlight */
+/* Hidden truth completed - no highlight */
 .orb.hidden-truth-complete img {
-    border: 3px solid #6b2d9e;
-    box-shadow: 0 0 15px rgba(107, 45, 158, 0.8);
+    border: none;
+    box-shadow: none;
 }
 
 /* Hover effect for all orbs */
